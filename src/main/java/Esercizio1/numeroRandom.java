@@ -12,16 +12,16 @@ public class numeroRandom {
         Scanner scanner = new Scanner(System.in);
         int numRand = 0;
         int[] array = new int[5];
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < array.length; i++) {
             numRand = (int) (Math.random() * 10 + 1);
             array[i] = numRand;
             System.out.println(array[i]);
         }
     while(true){
         try{
-            System.out.println("Inserisci un numero da 1 a 10 e premi invio: (inserisci -1 per uscire)");
+            System.out.println("Inserisci un numero da 1 a 10 e premi invio: (inserisci 0 per uscire)");
             int num = scanner.nextInt();
-            if( num == -1){
+            if( num == 0){
                 System.out.println("Programma Terminato");
                 break;
             }
