@@ -19,7 +19,7 @@ public class numeroRandom {
         }
     while(true){
         try{
-            System.out.println("Inserisci un numero da 1 a 10 e premi invio");
+            System.out.println("Inserisci un numero da 1 a 10 e premi invio: (inserisci -1 per uscire)");
             int num = scanner.nextInt();
             if( num == -1){
                 System.out.println("Programma Terminato");
